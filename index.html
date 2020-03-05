@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang=ja>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="js/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript">
+    //topスライド フェード
+    $(document).ready(function(){
+      $('#slider').slick({
+        slidesToShow: 1,
+        autoplay: true, //自動再生
+        dots: false, //ドットのナビゲーションを表示
+        arrows: false,
+        infinite: false, //スライドのループ有効化
+        speed: 3000, //切り替えのスピード（小さくすると速くなる）
+        fade: true, //フェードの有効化
+        cssEase: 'cubic-bezier(.645, .045, .355, 1)',
+        });
+      });
+  </script>
+    <title>AOYAMA PRINCESS HOTEL Wedding</title>
+  </head>
+  <body>
+    <header id="site_header">
+    <nav>
+      <ul>
+        <li class="header_list"><a href="#">CONCEPT</a></li>
+        <li class="header_list"><a href="#">GUIDE</a></li>
+        <li class="header_list"><a href="#">PLAN</a></li>
+        <li class="header_list"><a href="#">CONTACT</a></li>
+        <li class="header_list"><a href="#">ACCESS</a></li>
+      </ul>
+    </nav>
+   </header>
+  <!-- global-nav -->
+    <nav id="global_nav">
+    <ul id="global_list" class="float">
+      <li class="global_list_item"><a href="#">CONCEPT</a></li>
+      <li class="global_list_item"><a href="#">GUIDE</a></li>
+      <li class="global_list_item"><a href="#">PLAN</a></li>
+      <li class="global_list_item"><a href="#">CONTACT</a></li>
+      <li class="global_list_item"><a href="#">ACCESS</a></li>
+      <li class="global_list_item1"><i class="far fa-envelope"></i></li>
+      <li class="global_list_item1"><i class="fas fa-phone"></i></li>
+      <li class="global_list_item1" id="reserved"><a href="#">ご予約</a></li>
+    </ul>
+    </nav><!-- /global-nav -->
+   <main>
+     <section id="slider">
+    <img src="wedding.img/wed11.jpeg" alt="topimg" id="fade1">
+    <img src="wedding.img/wed10.jpg" alt="topimg" id="fade2">
+    <img src="wedding.img/wed2.jpg" alt="topimg" id="fade3">
+  </section>
+    <section class="main_content float">
+      <h1>CONSEPT</h1>
+      <section class="main_content1">
+        <p>お洒落なカフェやショップが並ぶ青山に新しくオープンしたホテルに兼設されたブライダル会場です。
+          自然に囲まれ、非日常的な癒しの空間をお過ごしください。</p>
+        <img src="wedding.img/wed1.webp" alt="consept" class="main_c_img" data-aos="fade-left" data-aos-duration="1200">
+      </section>
+    </section>
+    <section class="main_content float">
+      <h1 class="float">GUIDE</h1>
+      <section class="main_content1">
+        <img src="wedding.img/wed7.jpg" alt="guide" class="main_c_img" data-aos="fade-right" data-aos-duration="1200">
+        <p>緑やお花に囲まれながら華やかに過ごせるガーデン会場や、雨天候でも安心して過ごせる室内会場もご用意しております。</p>
+      </section>
+    </section>
+    <section class="main_content">
+      <h1>PLAN</h1>
+      <section class="plan_content">
+      <section id="plan1">
+        <h1>ジューンブライドプラン</h1>
+        <img src="wedding.img/wed6.jpg" alt="plan1" id="planimg">
+        <p>「ジューンブライド（June bride）」とは、古くからヨーロッパで「6月に結婚する花嫁は幸せになれる」とされる言い伝えのことです。
+          日本では梅雨の季節にあたりますが、雨の日でも安心な室内会場もご用意しております。</p>
+      <ul>
+        <li>30人～80人</li>
+        <li>5月～6月に挙式予定の方限定</li>
+        <li>(ご予約が埋まり次第終了となります。)</li>
+      </ul>
+      </section>
+      <section class="plan" id="plan2">
+        <h1>人数別プラン</h1>
+        <img src="wedding.img/wed8.jpg" alt="plan2">
+          <ul>
+            <li>～30人（約100万円）</li>
+            <li>～50人（約200万円）</li>
+            <li>～80人（約300万円）</li>
+          </ul>
+      </section>
+      <section class="plan float" id="plan3">
+        <h1>オプションプラン</h1>
+        <img src="wedding.img/plan1.jpg" alt="plan3">
+        <ul>
+          <li>少人数・大人数</li>
+          <li>ファミリー</li>
+          <li>マタニティ</li>
+        </ul>
+      </section>
+    </section>
+    <section id="moreplan">
+      <p id="floatleft" class="float">その他にも多数のプランご用意しております。</p>
+      <p><a href="#" id="more">View More</a></p>
+    </section>
+    <section class="plan_content">
+      <h1>お食事・デザート</h1>
+      <ul class="plan_sub float">
+        <li><img src="wedding.img/food1.jpg" alt="food" class="plan_c_img"></li>
+        <li><img src="wedding.img/food2.jpg" alt="food" class="plan_c_img"></li>
+        <li><img src="wedding.img/food3.jpg" alt="food" class="plan_c_img"></li>
+        <li><img src="wedding.img/food4.jpg" alt="food" class="plan_c_img"></li>
+        <li><img src="wedding.img/food5.jpg" alt="food" class="plan_c_img"></li>
+      </ul>
+      <p class="plan_sub_p">デザートやケーキまで豪華なフレンチ料理をご用意しております。
+        お客様のお好みやアレルギーなども事前に確認して提供致します。</p>
+    </section>
+    <section class="plan_content">
+      <h1>ドレス・メイクアップ</h1>
+      <ul class="plan_sub float">
+       <li><img src="wedding.img/dress1.jpg" alt="dress" class="plan_c_img"></li>
+       <li><img src="wedding.img/dress2.jpg" alt="dress" class="plan_c_img"></li>
+       <li><img src="wedding.img/dress3.jpg" alt="dress" class="plan_c_img"></li>
+       <li><img src="wedding.img/dress4.jpg" alt="dress" class="plan_c_img"></li>
+       <li><img src="wedding.img/dress5.jpg" alt="dress" class="plan_c_img"></li>
+    </ul>
+      <p class="plan_sub_p">500着以上のドレスからお客様のお気に入りのものをお選びいただけます。
+        ドレスだけでなく紳士用のタキシード・スーツもご用意しております。
+        ヘアメイクももちろん、プロが担当致します。</p>
+    </section>
+    <section id="planner">
+    <p>挙式やお食事、ドレスなどはプランナーがお客様のご希望に沿ったプランをご提案しますのでお気軽にご相談ください。</p>
+    <p><a href="#" id="contact">お問い合わせはこちら</a></p>
+   </section>
+  </section>
+  <section class="main_content float">
+    <h1>ACCESS</h1>
+    <section id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12965.498319731183!2d139.70940088412354!3d35.667777683157105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1582598973283!5m2!1sja!2sjp" width="300" height="300" style="border:0;" allowfullscreen="" id="mapimg"></iframe>
+    <p id="address">〒100-0000
+      東京都渋谷区青山0-0-0
+      青山プリンセスホテル
+
+      銀座線「表参道駅」徒歩10分
+      半蔵門線「青山一丁目駅」徒歩5分
+    </p>
+    </section>
+  </section>
+  <section class="main_content">
+    <h1>CONTACT</h1>
+    <ul id="contact_item">
+      <li>営業時間 9:00～23:00</li>
+      <li>TEL 03-0000-0000</li>
+      <li>Mail aoyama.princess.co.jp</li>
+      <li id="hotel"><a href="#">ホテルご利用のお客様はこちら</a></li>
+    </ul>
+  </section>
+  <section id="sub_content">
+    <a href="#"><img src="" alt="フォトギャラリー"></a>
+    <a href="#"><img src="" alt="お客様の声"></a>
+  </section>
+</main>
+<footer>
+  <section>
+  <p>@ Prinsess Hotel All Right Reserved</p>
+  <p>AOYAMA PRINCESS HOTEL</p>
+ </section>
+  <p id="pageTop"><a href="#"><i class="fas fa-arrow-up"></i></a></p>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script type="text/javascript">
+  AOS.init();
+  //sub_content スライド
+    $(function() {
+     $('.plan_sub').slick({
+       autoplay: true,
+       infinite: true,
+       slidesToShow: 4,
+       autoplaySpeed: 2000,
+       arrows: false,
+       dots:false,
+       slidesToScroll: 1,
+     });
+     });
+  //page topボタン
+      $(function(){
+      var topBtn=$('#pageTop');
+      topBtn.hide();
+      //◇ボタンの表示設定
+      $(window).scroll(function(){
+        if($(this).scrollTop()>500){
+          //---- 画面を80pxスクロールしたら、ボタンを表示する
+          topBtn.fadeIn();
+        }else{
+          //---- 画面が80pxより上なら、ボタンを表示しない
+          topBtn.fadeOut();
+        }
+      });
+      // ボタンをクリックしたら、スクロールして上に戻る
+      topBtn.click(function(){
+        $('body,html').animate({
+        scrollTop: 0},500);
+        return false;
+      });
+      });
+  // 固定ナビ
+        $( window ).on( 'scroll', function() {
+      if ( 100 < $( this ).scrollTop() ) { // 100px以上スクロールしたら
+        $( '#global_nav' ).addClass( 'm_fixed' );
+      } else {
+        $( '#global_nav' ).removeClass( 'm_fixed' );
+      }
+      });
+    //スクロールしたら隠す
+    $(function(){
+      var siteMenu=$('#site_header');
+
+      $(window).scroll(function(){
+        if($(this).scrollTop()>50){
+          siteMenu.fadeOut(100);
+        }else{
+          siteMenu.fadeIn(10);
+        }
+      })
+    });
+  </script>
+  </body>
+</html>

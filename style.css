@@ -1,0 +1,344 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* å…¨ä½“è¨­å®š */
+body{
+  width: 100%;
+}
+li{
+  list-style-type: none;
+  text-align: center;
+  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+}
+a{
+  text-decoration: none;
+}
+p{
+  white-space: pre-line;
+  text-align: center;
+  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+}
+h1{
+  text-align: center;
+  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+}
+.float::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* header */
+#site_header{
+  padding-top: 60px;
+  position: fixed;
+  width: 100%;
+  background: white;
+}
+header li{
+  display: inline-block;
+  margin: auto 20px;
+  font-size: 1.5rem;
+  font-family: 'Constantia','Didot',sans-serif;
+}
+header ul{
+text-align: right;
+width: 100%;
+}
+header a{
+  color: #e2c62f;
+}
+
+/* main */
+/* img */
+#fade1,#fade2,#fade3{
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  margin: 60px auto;
+}
+.main_c_img{
+  width: 60%;
+  margin: auto 3%;
+  height: 400px;
+  object-fit: cover;
+  float:left;
+}
+#planimg{
+ width: 80%;
+ margin: auto 10%;;
+}
+.plan img{
+  width: 70%;
+  margin: auto 15%;
+  object-fit: cover;
+}
+.plan_c_img{
+  width: 100%;
+  height: 300px;
+  float: left;
+  object-fit: cover;
+}
+#sub_content img{
+  width: 100%;
+  margin: auto;
+}
+#mapimg{
+  width: 30%;
+  float: left;
+  margin-left: 20%;
+}
+
+.main_content{
+  margin: auto;
+}
+.main_content h1{
+  margin: 100px auto;
+  color: #e2c62f;
+  border-bottom: double 5px #e2c62f;
+  width: 90%;
+  font-size: 2rem;
+  font-family: 'Constantia','Didot',sans-serif;
+}
+.main_content1{
+  width: 90%;
+  margin: auto;
+}
+.main_content1 p{
+  width: 30%;
+  margin: auto;
+  float: left;
+  text-align: left;
+  font-weight: 600;
+  color: #282525b3;
+  font-size: 1.2rem;
+}
+#plan1{
+  width: 60%;
+  margin: auto;
+}
+#plan1 p{
+  width: 50%;
+  margin: auto;
+}
+#plan1 ul{
+  width: 70%;
+}
+#plan1 h1,.plan h1{
+  border-radius: 50px;
+  padding: 10px;
+  background-color: #577e62e8;
+  width: 40%;
+  border-bottom: initial;
+  margin: 20px auto;
+  font-size: 1rem;
+}
+.plan_content h1{
+  font-size: 1rem;
+}
+.plan_content ul{
+  margin: 30px auto;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #5b5b5b;
+}
+#plan1 li {
+  border-bottom: solid 1px #e2c62f;
+  margin: auto;
+  width: 80%;
+	position: relative;
+	padding: .2em;
+}
+#plan2 li,#plan3 li{
+  border-bottom: solid 1px #e2c62f;
+  margin: auto;
+  width: 50%;
+  position: relative;
+  padding: .2em;
+}
+.plan{
+  width: 50%;
+  float: left;
+}
+.plan_sub{
+  width: 90%;
+  margin: auto;
+}
+.plan_sub_p{
+  width: 70%;
+  margin: auto;
+  font-size: 1.2rem;
+}
+#more{
+  color: #e2c62f;
+  padding: 10px;
+  border: solid 2px #e2c62f;
+  border-radius: 50px;
+  font-family: 'Segoe Print','Savoye LET',sans-serif;
+  font-weight: bolder;
+  line-height: 5;
+}
+#floatleft{
+  float: left;
+  width: 100%;
+  font-size: 1.2rem;
+}
+#more:hover{
+  background: #e2c62f;
+  color: white;
+}
+#planner p{
+  width: 60%;
+  margin: auto;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #5b5b5b;
+}
+#planner{
+  margin: 100px auto;
+}
+#contact{
+  color: #e2c62f;
+  font-size: 1.4rem;
+}
+#hotel:hover{
+  opacity: 0.5;
+}
+#map{
+  width: 90%;
+  margin: auto;
+}
+#address{
+  margin-top: 10%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #5b5b5b;
+}
+th{
+  padding: 5px;
+}
+#contact_item{
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #5b5b5b;
+}
+
+/* footer */
+footer{
+  width: 100%;
+  margin-top: 100px;
+}
+footer p{
+  font-weight: bold;
+  color: #067526;
+}
+
+
+/* トップ画像 */
+#slider{
+  max-width: 100%; margin: 0 auto; padding: 0; height: auto;
+}
+#slider img{
+ width: 100%;
+}
+
+/* トップページへ戻る */
+#pageTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+#pageTop i {
+  padding-top: 16px;
+}
+#pageTop a {
+  display: block;
+  z-index: 999;
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #124d23;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+#pageTop a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+/* ヘッダーメニュー固定 */
+#global_nav {
+  position: static;
+  top: -30px;
+  transition: all 0.2s ease-out 0s;
+  padding: 20px 0;
+  background: white;
+  width: 100%;
+}
+#global_nav.m_fixed {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  border-bottom: solid 2px #ead892b3;
+}
+#site_header.hide{
+    transform: translateY(-100%);
+}
+.global_list_item{
+  display: inline-block;
+  margin: auto 20px;
+  font-size: 1.5rem;
+  font-family: 'Constantia','Didot',sans-serif;
+}
+.global_list_item1{
+  display: inline-block;
+  float: right;
+  margin: auto 16px;
+  font-size: 1.2rem;
+  color: #124d23;
+}
+#global_list{
+  text-align: center;
+}
+.global_list_item a{
+  color: #e2c62f;
+}
+#reserved{
+  background: #337445;
+  padding: 0 10px;
+}
+#reserved a{
+  color: white;
+}
+
+
+@media screen and (max-width: 959px) {
+  header ul{
+    text-align: center;
+  }
+  #site_header{
+    padding-top: 120px;
+  }
+  .global_list_item{
+    margin: 20px 10px;
+    font-size: 1.2rem;
+  }
+  .global_list_item1{
+    margin: 10px 20px;
+  }
+  #global_list{
+    padding: 20px;
+  }
+  #global_nav{
+    padding-top: 10px;
+    padding: initial;
+  }
+  #plan1 p{
+  width: 60%;
+  }
+
+}
