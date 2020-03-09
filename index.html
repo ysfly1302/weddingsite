@@ -55,21 +55,23 @@
     </ul>
     </nav><!-- /global-nav -->
   <!-- ドロップダウンメニュー -->
-  <div id="page">
-  <header id="header">
-        <p class="nav-open"><a href="#gNav">MENU</a></p>
-        <nav id="gNav">
+    <div id="nav-toggle">
+     <div>
+         <span></span>
+         <span></span>
+         <span></span>
+     </div>
+  </div>
+  <div id="gloval-nav">
+     <nav>
          <ul>
-              <li><a href="">メニュー</a></li>
-              <li><a href="">メニュー</a></li>
-              <li><a href="">メニュー</a></li>
-              <li><a href="">メニュー</a></li>
-              <li><a href="">メニュー</a></li>
-              <li><a href="">メニュー</a></li>
-          </ul>
-         <div class="nav-close"><a href="#page">CLOSE</a></div>
-      </nav>
-    </header>
+             <li><a href="#">Home</a></li>
+             <li><a href="#">News</a></li>
+             <li><a href="#">About</a></li>
+             <li><a href="#">Works</a></li>
+             <li><a href="#">Contact</a></li>
+         </ul>
+     </nav>
   </div>
 		<!-- メイン内容 -->
     <main>
@@ -199,6 +201,14 @@
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script type="text/javascript">
   AOS.init();
+  //ナビゲーションメニュー
+  (function($) {
+    $(function () {
+        $('#nav-toggle').on('click', function() {
+            $('body').toggleClass('open');
+        });
+    });
+  })(jQuery);
   //sub_content スライド
     $(function() {
      $('.plan_sub').slick({
@@ -209,6 +219,13 @@
        arrows: false,
        dots:false,
        slidesToScroll: 1,
+       //レスポンシブ
+        responsive: [{
+      breakpoint: 559,  //ブレイクポイントを指定
+      settings: {
+        slidesToShow: 1,
+      }
+    }]
      });
      });
   //page topボタン
