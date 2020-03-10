@@ -5,27 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
+    <link href="js/slick.css" rel="stylesheet">
+    <link rel="stylesheet" href="js/swiper.min.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="js/slick-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="js/slick.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript">
-    //topスライド フェード
-    $(document).ready(function(){
-      $('#slider').slick({
-        slidesToShow: 1,
-        autoplay: true, //自動再生
-        dots: false, //ドットのナビゲーションを表示
-        arrows: false,
-        infinite: false, //スライドのループ有効化
-        speed: 3000, //切り替えのスピード（小さくすると速くなる）
-        fade: true, //フェードの有効化
-        cssEase: 'cubic-bezier(.645, .045, .355, 1)',
-        });
-      });
-  </script>
     <title>AOYAMA PRINCESS HOTEL Wedding</title>
   </head>
   <body>
@@ -33,55 +16,63 @@
       <img src="wedding.img/logo_03.png" alt="ロゴ" id="logo">
     <nav>
       <ul>
-        <li class="header_list"><a href="#">CONCEPT</a></li>
-        <li class="header_list"><a href="#">GUIDE</a></li>
-        <li class="header_list"><a href="#">PLAN</a></li>
-        <li class="header_list"><a href="#">CONTACT</a></li>
-        <li class="header_list"><a href="#">ACCESS</a></li>
+        <li class="header_list"><a href="#h1_consept">CONCEPT</a></li>
+        <li class="header_list"><a href="#h1_guide">GUIDE</a></li>
+        <li class="header_list"><a href="#h1_plan">PLAN</a></li>
+        <li class="header_list"><a href="#h1_contact">CONTACT</a></li>
+        <li class="header_list"><a href="#h1_access">ACCESS</a></li>
       </ul>
     </nav>
+    <!-- ハンバーガーメニュー -->
+      <div id="nav-toggle">
+       <div>
+           <span></span>
+           <span></span>
+           <span></span>
+       </div>
+    </div>
+    <div id="gloval-nav">
+       <nav>
+           <ul id="menu">
+               <li class="menu"><a href="#h1_consept">CONSEPT</a></li>
+               <li><a href="#h1_guide">GUIDE</a></li>
+               <li><a href="#h1_plan">PLAN</a></li>
+               <li><a href="#h1_contact">CONTACT</a></li>
+               <li><a href="#h1_access">ACCESS</a></li>
+           </ul>
+       </nav>
+    </div>
    </header>
   <!-- global-nav -->
     <nav id="global_nav">
     <ul id="global_list" class="float">
-      <li class="global_list_item"><a href="#">CONCEPT</a></li>
-      <li class="global_list_item"><a href="#">GUIDE</a></li>
-      <li class="global_list_item"><a href="#">PLAN</a></li>
-      <li class="global_list_item"><a href="#">CONTACT</a></li>
-      <li class="global_list_item"><a href="#">ACCESS</a></li>
+      <li class="global_list_item"><a href="#h1_consept">CONCEPT</a></li>
+      <li class="global_list_item"><a href="#h1_guide">GUIDE</a></li>
+      <li class="global_list_item"><a href="#h1_plan">PLAN</a></li>
+      <li class="global_list_item"><a href="#h1_contact">CONTACT</a></li>
+      <li class="global_list_item"><a href="#h1_access">ACCESS</a></li>
       <li class="global_list_item1"><i class="far fa-envelope"></i></li>
       <li class="global_list_item1"><i class="fas fa-phone"></i></li>
       <li class="global_list_item1" id="reserved"><a href="#">ご予約</a></li>
     </ul>
     </nav><!-- /global-nav -->
-  <!-- ドロップダウンメニュー -->
-    <div id="nav-toggle">
-     <div>
-         <span></span>
-         <span></span>
-         <span></span>
-     </div>
-  </div>
-  <div id="gloval-nav">
-     <nav>
-         <ul>
-             <li><a href="#">Home</a></li>
-             <li><a href="#">News</a></li>
-             <li><a href="#">About</a></li>
-             <li><a href="#">Works</a></li>
-             <li><a href="#">Contact</a></li>
-         </ul>
-     </nav>
-  </div>
+
 		<!-- メイン内容 -->
     <main>
-      <section id="slider">
-        <img src="wedding.img/wed11.jpeg" alt="topimg" id="fade1">
-        <img src="wedding.img/wed10.jpg" alt="topimg" id="fade2">
-        <img src="wedding.img/wed2.jpg" alt="topimg" id="fade3">
-      </section>
+      <div class="swiper-container">
+      	<!-- メイン表示部分 -->
+      	<div class="swiper-wrapper">
+      		<!-- 各スライド -->
+      		<div class="swiper-slide"><img src="wedding.img/wed10.jpg" alt="スライド画像１"></div>
+      		<div class="swiper-slide"><img src="wedding.img/wed11.jpeg" alt="スライド画像２"></div>
+      		<div class="swiper-slide"><img src="wedding.img/wed2.jpg" alt="スライド画像３">
+            <span class="s-fade-text">Happy time for you</span>
+            <a href="" class="s-three-button">scroll</a>
+          </div>
+      	</div>
+      </div>
     <section class="main_content float">
-      <h1>CONSEPT</h1>
+      <h1 id="h1_consept">CONSEPT</h1>
       <section class="main_content1">
         <p>お洒落なカフェやショップが並ぶ青山に新しくオープンしたホテルに兼設されたブライダル会場です。
           自然に囲まれ、非日常的な癒しの空間をお過ごしください。</p>
@@ -89,14 +80,14 @@
       </section>
     </section>
     <section class="main_content float">
-      <h1 class="float">GUIDE</h1>
+      <h1 class="float" id="h1_guide">GUIDE</h1>
       <section class="main_content1">
         <img src="wedding.img/wed7.jpg" alt="guide" class="main_c_img" data-aos="fade-right" data-aos-duration="1200">
         <p>緑やお花に囲まれながら華やかに過ごせるガーデン会場や、雨天候でも安心して過ごせる室内会場もご用意しております。</p>
       </section>
     </section>
     <section class="main_content">
-      <h1>PLAN</h1>
+      <h1 id="h1_plan">PLAN</h1>
       <section class="plan_content">
       <section id="plan1">
         <h1>ジューンブライドプラン</h1>
@@ -163,7 +154,7 @@
    </section>
   </section>
   <section class="main_content float">
-    <h1>ACCESS</h1>
+    <h1 id="h1_access">ACCESS</h1>
     <section id="map">
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12965.498319731183!2d139.70940088412354!3d35.667777683157105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1582598973283!5m2!1sja!2sjp" width="300" height="300" style="border:0;" allowfullscreen="" id="mapimg"></iframe>
     <p id="address">〒100-0000
@@ -176,7 +167,7 @@
     </section>
   </section>
   <section class="main_content">
-    <h1>CONTACT</h1>
+    <h1 id="h1_contact">CONTACT</h1>
     <ul id="contact_item">
       <li>営業時間 9:00～23:00</li>
       <li>TEL 03-0000-0000</li>
@@ -197,10 +188,33 @@
   <p id="pageTop"><a href="#"><i class="fas fa-arrow-up"></i></a></p>
 </footer>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script type="text/javascript">
-  AOS.init();
+  AOS.init({
+    disable: function () {
+ return window.innerWidth < 559;
+  }
+  });
+  //topスライド フェード
+  var mySwiper = new Swiper ('.swiper-container', {
+  // オプションパラメータ(一部のみ抜粋)
+  loop: false, // 最後のスライドまで到達した場合、最初に戻らずに続けてスライド可能にするか。
+  speed: 2000, // スライドが切り替わるトランジション時間(ミリ秒)。
+  slidesPerView: 3, // 何枚のスライドを表示するか
+  spaceBetween: 0, // スライド間の余白サイズ(ピクセル)
+  direction: 'horizontal', // スライド方向。 'horizontal'(水平) か 'vertical'(垂直)。effectオプションが 'slide' 以外は無効。
+  effect: 'fade', // "slide", "fade"(フェード), "cube"(キューブ回転), "coverflow"(カバーフロー) または "flip"(平面回転)
+
+  // スライダーの自動再生
+  // autoplay: true 　のみなら既定値での自動再生
+  autoplay: {
+    delay: 1000, // スライドが切り替わるまでの表示時間(ミリ秒)
+    stopOnLastSlide: true, // 最後のスライドまで表示されたら自動再生を中止するか
+    disableOnInteraction: false, // ユーザーのスワイプ操作を検出したら自動再生を中止するか
+  },
+});
   //ナビゲーションメニュー
   (function($) {
     $(function () {
@@ -208,6 +222,9 @@
             $('body').toggleClass('open');
         });
     });
+    $('#menu a').on('click', function() {
+       $('#nav-toggle').click();
+   });
   })(jQuery);
   //sub_content スライド
     $(function() {
