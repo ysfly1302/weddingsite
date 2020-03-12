@@ -8,7 +8,7 @@
     <meta property="og:url" content="https://ysfly1302.github.io/weddingsite/"/>
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="ホテルウェディング会場サイト"/>
-    <meta property="og:description" content="青山にあるホテルに兼設された緑に囲まれたお洒落なウェディんぐ会場です。"/>
+    <meta property="og:description" content="青山にあるホテルに兼設された緑に囲まれたお洒落なウェディング会場です。"/>
     <meta property="og:site_name" content="Aoyama Princess Hotel weddingsite"/>
     <meta property="og:image" content="https://ysfly1302.github.io/weddingsite/wedding.img/wed2.jpg"/>
   <!-- facebook用ogp設定 -->
@@ -85,7 +85,7 @@
       	</div>
       </div>
     <section class="main_content float">
-      <h1 id="h1_consept">CONSEPT</h1>
+      <h1 id="h1_consept" class="anchor">CONSEPT</h1>
       <section class="main_content1">
         <p>お洒落なカフェやショップが並ぶ青山に新しくオープンしたホテルに兼設されたブライダル会場です。
           自然に囲まれ、非日常的な癒しの空間をお過ごしください。</p>
@@ -93,14 +93,14 @@
       </section>
     </section>
     <section class="main_content float">
-      <h1 class="float" id="h1_guide">GUIDE</h1>
+      <h1 class="float anchor" id="h1_guide">GUIDE</h1>
       <section class="main_content1">
         <img src="wedding.img/wed7.jpg" alt="guide" class="main_c_img" data-aos="fade-right" data-aos-duration="1200">
         <p>緑やお花に囲まれながら華やかに過ごせるガーデン会場や、雨天候でも安心して過ごせる室内会場もご用意しております。</p>
       </section>
     </section>
     <section class="main_content">
-      <h1 id="h1_plan">PLAN</h1>
+      <h1 id="h1_plan" class="anchor">PLAN</h1>
       <section class="plan_content">
       <section id="plan1">
         <h1>ジューンブライドプラン</h1>
@@ -167,7 +167,7 @@
    </section>
   </section>
   <section class="main_content float">
-    <h1 id="h1_access">ACCESS</h1>
+    <h1 id="h1_access" class="anchor">ACCESS</h1>
     <section id="map">
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12965.498319731183!2d139.70940088412354!3d35.667777683157105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1582598973283!5m2!1sja!2sjp" width="300" height="300" style="border:0;" allowfullscreen="" id="mapimg"></iframe>
     <p id="address">〒100-0000
@@ -180,7 +180,7 @@
     </section>
   </section>
   <section class="main_content">
-    <h1 id="h1_contact">CONTACT</h1>
+    <h1 id="h1_contact" class="anchor">CONTACT</h1>
     <ul id="contact_item">
       <li>営業時間 9:00～23:00</li>
       <li>TEL 03-0000-0000</li>
@@ -279,6 +279,16 @@
         return false;
       });
       });
+      //スクロールボタン
+      //向かいたい先の位置を変数positionに入れる。
+      var speed =1000;
+          var position = $("#h1_consept").offset().top;　//最初の要素の、ドキュメント上での表示位置[y軸]を返す
+          $(".s-three-button").click(function(){
+              $("html,body").animate({
+                  scrollTop : position // さっき変数に入れた位置まで
+                },  speed, "swing");
+                  queue : false　// どれくらい経過してから、アニメーションを始めるか。キュー[待ち行列]。falseを指定すると、キューに追加されずに即座にアニメーションを実行。
+              });
   // 固定ナビ
         $( window ).on( 'scroll', function() {
       if ( 100 < $( this ).scrollTop() ) { // 100px以上スクロールしたら
