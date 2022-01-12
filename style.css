@@ -44,8 +44,8 @@ h1{
   width: 100%;
   text-align: center;
   color: white;
-  font-size: 5rem;
-  font-family: 'Gabriola','Bradley Hand',sans-serif;
+  font-size: 3rem;
+  font-family: "Noto Serif JP","YuMincho","Yu Mincho","游明朝体","ヒラギノ明朝 ProN","Hiragino Mincho ProN","ヒラギノ明朝 ProN","Hiragino Mincho ProN",serif;;
 }
 .swiper-slide-active .s-fade-text {
   animation: slideTextFade 4s ease 0s 1 normal;
@@ -97,7 +97,7 @@ h1{
 #logo{
   width: 20%;
   float: left;
-  margin: 20px;
+  margin: 20px 0 0 100px;
 }
 #site_header{
   position: fixed;
@@ -106,14 +106,13 @@ h1{
 }
 header li{
   display: inline-block;
-  margin: auto 20px;
-  font-size: 1.5rem;
+  margin: auto 10px;
+  font-size: 1.4rem;
   font-family: 'Constantia','Didot',sans-serif;
 }
 header ul{
-text-align: right;
-width: 100%;
-margin: 50px auto;
+  text-align: right;
+  margin: 50px 100px 0 0 ;
 }
 header a{
   color: #e2c62f;
@@ -162,7 +161,7 @@ header a{
 }
 .main_content h1{
   margin: 100px auto;
-  color: #e2c62f;
+  color: #fff;
   border-bottom: double 5px #e2c62f;
   width: 90%;
   font-size: 2rem;
@@ -186,7 +185,7 @@ header a{
   margin: auto;
 }
 #plan1 p{
-  width: 50%;
+  width: 60%;
   margin: auto;
 }
 #plan1 ul{
@@ -359,8 +358,8 @@ footer p{
 }
 .global_list_item{
   display: inline-block;
-  margin: auto 20px;
-  font-size: 1.5rem;
+  margin: auto 10px;
+  font-size: 1.4rem;
   font-family: 'Constantia','Didot',sans-serif;
 }
 .global_list_item1{
@@ -371,7 +370,7 @@ footer p{
   color: #124d23;
 }
 #global_list{
-  text-align: center;
+  margin: 0 100px;
 }
 .global_list_item a{
   color: #e2c62f;
