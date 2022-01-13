@@ -144,16 +144,16 @@ header a{
 }
 #sub_content img{
   width: 40%;
-  margin: 5% 30%;
+  margin: 0 20px;
 }
 #mapimg{
   width: 30%;
   float: left;
   margin-left: 20%;
 }
-#hotel{
-  width: 20%;
-  margin: 5% 40%;
+#planner img{
+    width: 60%;
+    margin: 100px 0 0 0;
 }
 
 .main_content{
@@ -161,7 +161,7 @@ header a{
 }
 .main_content h1{
   margin: 100px auto;
-  color: #fff;
+  color: #e2c62f;
   border-bottom: double 5px #e2c62f;
   width: 90%;
   font-size: 2rem;
@@ -238,10 +238,9 @@ header a{
 }
 #more{
   color: #e2c62f;
-  padding: 10px;
+  padding: 10px 30px;
   border: solid 2px #e2c62f;
   border-radius: 50px;
-  font-family: 'Segoe Print','Savoye LET',sans-serif;
   font-weight: bolder;
   line-height: 5;
 }
@@ -263,6 +262,7 @@ header a{
 }
 #planner{
   margin: 100px auto;
+  text-align: center;
 }
 #contact{
   color: #e2c62f;
@@ -288,6 +288,10 @@ th{
   font-size: 1.2rem;
   font-weight: 700;
   color: #5b5b5b;
+}
+#sub_content{
+  text-align: center;
+  margin: 200px auto;
 }
 
 /* footer */
@@ -391,10 +395,13 @@ footer p{
 @media screen and (max-width: 959px) {
   .swiper-slide img {
     width: 100%;
-    height: 900px;
+    height: 600px;
     object-fit: cover;
-    margin-top: 30px;
-}
+    padding-top: 50px;
+  }
+  #menu{
+    display: none;
+  }
   #logo{
     float: initial;
     margin: 0 40%;
@@ -411,17 +418,26 @@ footer p{
     font-size: 1.2rem;
   }
   .global_list_item1{
-    margin: 10px 20px;
+    margin: 16px 20px;
   }
   #global_list{
-    padding: 20px;
+    margin: 0 50px;
   }
   #global_nav{
     padding-top: 10px;
     padding: initial;
   }
+  .anchor {
+    padding-top: 0;
+  }
+  #plan1{
+    width: 80%;
+  }
   #plan1 p{
   width: 60%;
+  }
+  .plan_c_img{
+    height: 180px;
   }
   #dropmenu{
   display: none;
@@ -430,11 +446,18 @@ footer p{
     width: 50%;
     margin: auto;
   }
+  #sub_content img {
+    width: 60%;
+    margin: 20px 0;
+  } 
 }
 
 @media screen and (max-width: 559px){
+  #menu{
+    display: block;
+  }
   .s-fade-text{
-    font-size: 0.5rem;
+    font-size: 1.6rem !important;
   }
   .header_list{
     display: none;
@@ -451,6 +474,8 @@ footer p{
     width: 100%;
     height: 700px;
     object-fit: cover;
+    margin-top: 0;
+    padding-top: 0;
 }
 .s-fade-text{
   font-size: 3rem;
@@ -464,6 +489,7 @@ footer p{
     float: initial;
     width: 90%;
     margin: auto;
+    font-size: 1rem;
   }
   .main_c_img{
     width: 100%;
@@ -476,9 +502,11 @@ footer p{
   }
   #plan1,#plan1 p,#plan1 h1{
     width: 80%;
+    font-size: 0.8rem;
   }
   #plan1 ul,#plan1 li{
     width: 100%;
+    font-size: 1rem;
   }
   #planimg{
     width: 100%;
@@ -489,17 +517,24 @@ footer p{
     margin: auto 10%;
   }
   .plan_sub_p,#planner p{
-    width: 90%;
+    width: 80%;
+    font-size: 1rem;
+  }
+  .plan_c_img{
+    height: auto;
+  }
+  #floatleft{
+    font-size: 1rem;
   }
   #mapimg{
     float: initial;
     width: 100%;
     margin: auto;
   }
-  #hotel{
-    width: 60%;
-    margin: 5% 20%;
-  }
+  #planner img {
+    width: 80%;
+    margin: 50px 0 0 0;
+  } 
   #sub_content img{
     width: 80%;
     margin: 5% 10%;
